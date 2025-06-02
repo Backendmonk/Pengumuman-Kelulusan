@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Kelulusan SMP Ngurah Rai Kerobokan 2024/2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-color: #0f172a;
+            min-height: 100vh;
+        }
+        
+        .card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .result-card {
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .result-card.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            border-radius: 0;
+            animation: fall 5s ease-out infinite;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        .logo-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .progress-bar {
+            transition: width 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+            transform: rotate(30deg);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(30deg); }
+            100% { transform: translateX(100%) rotate(30deg); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="card rounded-2xl shadow-xl p-6 mb-8 text-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+            
+            <div class="flex justify-center mb-6">
+                <div class="logo-pulse w-28 h-28 bg-gradient-to-br from-blue-600 to-indigo-800 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                    <div class="text-center">
+                        <span class="text-white text-2xl font-bold">SMP</span>
+                        <div class="text-xs text-blue-100 font-medium">NGURAH RAI</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-2">SMP NGURAH RAI KEROBOKAN</h1>
+            <h2 class="text-xl md:text-2xl font-semibold text-pink-600 mb-4">Pengumuman Kelulusan Tahun Ajaran 2024/2025</h2>
+            
+            <div class="h-1 w-48 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
+            
+            <div class="bg-blue-50 p-4 rounded-lg max-w-lg mx-auto">
+                <p class="text-gray-700">Silakan masukkan <span class="font-semibold text-blue-700">Nama</span> dan <span class="font-semibold text-blue-700">NIS</span> untuk melihat hasil kelulusan Anda</p>
+            </div>
+            
+            <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full opacity-20"></div>
+            <div class="absolute -top-20 -left-20 w-64 h-64 bg-gradient-to-br from-pink-200 to-purple-300 rounded-full opacity-20"></div>
+        </div>
+        
+        <!-- Search Form -->
+        <div class="card rounded-2xl shadow-xl p-6 mb-8 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-blue-500"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="nama" class="block text-sm font-medium text-gray-700 mb-2">Nama Siswa</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input type="text" id="nama" class="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="Masukkan nama lengkap">
+                    </div>
+                </div>
+                <div>
+                    <label for="nis" class="block text-sm font-medium text-gray-700 mb-2">Nomor Induk Siswa (NIS)</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input type="text" id="nis" class="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="Masukkan NIS">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6 flex justify-center">
+                <button id="cekBtn" class="btn-shine px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-indigo-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        Cek Kelulusan
+                    </div>
+                </button>
+            </div>
+            
+            <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-gradient-to-br from-green-200 to-blue-200 rounded-full opacity-20"></div>
+        </div>
+        
+        <!-- Result Card (Hidden by default) -->
+        <div id="resultCard" class="result-card card rounded-2xl shadow-xl p-6 mb-8 hidden relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-400 to-blue-500"></div>
+            
+            <div class="text-center mb-8">
+                <div class="inline-block p-3 rounded-full bg-blue-50 mb-4">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Hasil Kelulusan</h3>
+                <div class="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-sm p-6 mb-6 border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-500 mb-1">Nama Siswa</p>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                                <p id="resultNama" class="text-lg font-semibold text-gray-800">-</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-1">Nomor Induk Siswa (NIS)</p>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                                </svg>
+                                <p id="resultNis" class="text-lg font-semibold text-gray-800">-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-500 mb-1">Nilai Rata-Rata</p>
+                            <div class="flex items-center mb-2">
+                                <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                                <p id="resultNilai" class="text-lg font-semibold text-gray-800">-</p>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="overflow-hidden h-3 text-xs flex rounded-full bg-gray-200">
+                                    <div id="progressFill" class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gradient-to-r from-blue-500 to-indigo-600" style="width: 0%"></div>
+                                </div>
+                                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                    <span>KKM: 70</span>
+                                    <span>Nilai Tertinggi: 100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-1">Status Kelulusan</p>
+                            <div id="statusContainer" class="flex items-center">
+                                <div id="statusIcon" class="mr-2">
+                                    <!-- Icon will be inserted by JS -->
+                                </div>
+                                <p id="resultStatus" class="text-xl font-bold">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button id="searchAgainBtn" class="px-6 py-2 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-all duration-300 shadow-sm">
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                        Cari Siswa Lain
+                    </div>
+                </button>
+            </div>
+            
+            <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-green-200 to-blue-200 rounded-full opacity-20"></div>
+        </div>
+        
+        <!-- Not Found Card (Hidden by default) -->
+        <div id="notFoundCard" class="result-card card rounded-2xl shadow-xl p-6 mb-8 hidden relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-400 to-orange-500"></div>
+            
+            <div class="text-center py-8">
+                <div class="inline-block p-4 rounded-full bg-red-50 mb-4">
+                    <svg class="w-12 h-12 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Data Tidak Ditemukan</h3>
+                <p class="text-gray-600 mb-6 max-w-md mx-auto">Maaf, data siswa dengan nama dan NIS yang Anda masukkan tidak ditemukan. Silakan periksa kembali dan coba lagi.</p>
+                <button id="tryAgainBtn" class="px-6 py-3 bg-gradient-to-r from-red-500 to-orange-500 text-white font-medium rounded-lg hover:from-red-600 hover:to-orange-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-all duration-300 shadow-lg">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                        Coba Lagi
+                    </div>
+                </button>
+            </div>
+            
+            <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-red-200 to-orange-200 rounded-full opacity-20"></div>
+        </div>
+        
+        <!-- Decoration SVGs -->
+        <div class="hidden md:block">
+            <div class="floating absolute top-20 left-10 opacity-70">
+                <svg class="w-16 h-16 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+                </svg>
+            </div>
+            <div class="floating absolute top-40 right-10 opacity-70" style="animation-delay: 1s;">
+                <svg class="w-12 h-12 text-purple-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="text-center text-white text-sm py-4">
+            <p>&copy; 2024 SMP Ngurah Rai Kerobokan. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+
+    <script>
+        // Data siswa
+        const dataSiswa = [
+            { nama: "Bearto Cepianus Mandira", nis: "5757", nilai: 75, status: "LULUS" },
+            { nama: "DEVITA KRISTIANI DIHA", nis: "5758", nilai: 83, status: "LULUS" },
+            { nama: "FELICIA GWEN MATHILDA SOPLANIT", nis: "5759", nilai: 83, status: "LULUS" },
+            { nama: "Gede Kiesnha Erdika Permana", nis: "5760", nilai: 81, status: "LULUS" },
+            { nama: "I Gede Awis Jhanuarta Putra", nis: "5761", nilai: 75, status: "LULUS" },
+            { nama: "I Gusti Agus Yasa Pratama", nis: "5762", nilai: 76, status: "LULUS" },
+            { nama: "I KADEK DANA SAPUTRA", nis: "5763", nilai: 80, status: "LULUS" },
+            { nama: "I Komang Dio Desa Nanta", nis: "5764", nilai: 78, status: "LULUS" },
+            { nama: "Kadek Indah Anistia", nis: "5766", nilai: 77, status: "LULUS" },
+            { nama: "I Gede Pandu Aditya", nis: "5807", nilai: 76, status: "LULUS" },
+            { nama: "Muhammad Hasan", nis: "5768", nilai: 78, status: "LULUS" },
+            { nama: "NAZWA EKA MAULITDIA", nis: "5769", nilai: 78, status: "LULUS" },
+            { nama: "Ni Kadek Indah Lestari", nis: "5770", nilai: 78, status: "LULUS" },
+            { nama: "Ni Kadek Laras Dwi Arianti", nis: "5771", nilai: 80, status: "LULUS" },
+            { nama: "Ni Luh Febriyanti Puspa Dewi", nis: "5774", nilai: 80, status: "LULUS" },
+            { nama: "NI LUH WULANDARI", nis: "5772", nilai: 78, status: "LULUS" },
+            { nama: "Ni Putu Ngurah Anindya Jessica", nis: "5775", nilai: 81, status: "LULUS" },
+            { nama: "Putu Amyra Dewi Arya Febriana", nis: "5776", nilai: 86, status: "LULUS" },
+            { nama: "Sefty Ramadhani", nis: "5777", nilai: 79, status: "LULUS" },
+            { nama: "VIKO JUNIAR ARDIANSYAH", nis: "5779", nilai: 77, status: "LULUS" },
+            { nama: "WULAN NADIN PRASTYO", nis: "5780", nilai: 79, status: "LULUS" },
+            { nama: "ALFRED WENI", nis: "5781", nilai: 75, status: "LULUS" },
+            { nama: "Alif Akbar Firmansyah", nis: "5782", nilai: 77, status: "LULUS" },
+            { nama: "Deswita Evi Dewitri", nis: "5783", nilai: 82, status: "LULUS" },
+            { nama: "Dewa Kadek Candra Wirawan", nis: "5784", nilai: 77, status: "LULUS" },
+            { nama: "Faizah Regina Putri", nis: "5785", nilai: 87, status: "LULUS" },
+            { nama: "FAJAR PURNAMA PUTRA", nis: "5786", nilai: 85, status: "LULUS" },
+            { nama: "I Gede Yuda Pratama", nis: "5788", nilai: 73, status: "LULUS" },
+            { nama: "I Gusti Kadek Hendrayani", nis: "5789", nilai: 85, status: "LULUS" },
+            { nama: "I Made Diva Adnyana", nis: "5790", nilai: 79, status: "LULUS" },
+            { nama: "Keizya Ilmira Haryani", nis: "5791", nilai: 80, status: "LULUS" },
+            { nama: "Luh Kade Vidya Caitanya Gayatri", nis: "5792", nilai: 83, status: "LULUS" },
+            { nama: "Ni Kadek Harum Dani Indah Cahayani", nis: "5794", nilai: 79, status: "LULUS" },
+            { nama: "Ni Luh Putu Gea Maharani", nis: "5795", nilai: 85, status: "LULUS" },
+            { nama: "Ni Luh Putu Purnamaira", nis: "5796", nilai: 87, status: "LULUS" },
+            { nama: "Ni Putu Dinda Dewi Permata Sari", nis: "5797", nilai: 83, status: "LULUS" },
+            { nama: "Ni Putu Flora Reggina", nis: "5798", nilai: 83, status: "LULUS" },
+            { nama: "Ni Putu Suci Marsya", nis: "5799", nilai: 84, status: "LULUS" },
+            { nama: "NUR MUHAMMAD ALI ZACKY", nis: "5800", nilai: 80, status: "LULUS" },
+            { nama: "OPHELIA ANNABELLE PRAMONO", nis: "5856", nilai: 79, status: "LULUS" },
+            { nama: "RAFA OKTA DIAR PURBAYU", nis: "5802", nilai: 80, status: "LULUS" },
+            { nama: "Ravel Eka Prasetya", nis: "5803", nilai: 79, status: "LULUS" },
+            { nama: "RICHARD ARCHY SCHRAMEL", nis: "5808", nilai: 80, status: "LULUS" },
+            { nama: "Vincenzo Raden Bagus Priyadi", nis: "5804", nilai: 77, status: "LULUS" }
+        ];
+
+        // DOM Elements
+        const cekBtn = document.getElementById('cekBtn');
+        const searchAgainBtn = document.getElementById('searchAgainBtn');
+        const tryAgainBtn = document.getElementById('tryAgainBtn');
+        const resultCard = document.getElementById('resultCard');
+        const notFoundCard = document.getElementById('notFoundCard');
+        const namaInput = document.getElementById('nama');
+        const nisInput = document.getElementById('nis');
+        
+        // Result Elements
+        const resultNama = document.getElementById('resultNama');
+        const resultNis = document.getElementById('resultNis');
+        const resultNilai = document.getElementById('resultNilai');
+        const resultStatus = document.getElementById('resultStatus');
+        const progressFill = document.getElementById('progressFill');
+        const statusIcon = document.getElementById('statusIcon');
+        
+        // Event Listeners
+        cekBtn.addEventListener('click', cekKelulusan);
+        searchAgainBtn.addEventListener('click', resetForm);
+        tryAgainBtn.addEventListener('click', resetForm);
+        
+        // Enter key functionality
+        namaInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                nisInput.focus();
+            }
+        });
+        
+        nisInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                cekKelulusan();
+            }
+        });
+        
+        // Functions
+        function cekKelulusan() {
+            const nama = namaInput.value.trim();
+            const nis = nisInput.value.trim();
+            
+            if (!nama || !nis) {
+                showAlert('Silakan masukkan nama dan NIS terlebih dahulu!');
+                return;
+            }
+            
+            // Find student data - more flexible search
+            const siswa = dataSiswa.find(s => {
+                const nameMatch = s.nama.toLowerCase().includes(nama.toLowerCase()) || 
+                                 nama.toLowerCase().includes(s.nama.toLowerCase());
+                const nisMatch = s.nis === nis;
+                return nisMatch && nameMatch;
+            });
+            
+            if (siswa) {
+                // Show result
+                resultNama.textContent = siswa.nama;
+                resultNis.textContent = siswa.nis;
+                resultNilai.textContent = siswa.nilai;
+                
+                // Set progress bar with animation
+                setTimeout(() => {
+                    const percentage = (siswa.nilai / 100) * 100;
+                    progressFill.style.width = `${percentage}%`;
+                }, 100);
+                
+                // Set color and icon based on status
+                if (siswa.status === "LULUS") {
+                    resultStatus.textContent = "LULUS";
+                    resultStatus.className = "text-xl font-bold text-green-600";
+                    statusIcon.innerHTML = `
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    `;
+                    createConfetti();
+                } else {
+                    resultStatus.textContent = "TIDAK LULUS";
+                    resultStatus.className = "text-xl font-bold text-red-600";
+                    statusIcon.innerHTML = `
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    `;
+                }
+                
+                // Show result card with animation
+                notFoundCard.classList.add('hidden');
+                notFoundCard.classList.remove('show');
+                resultCard.classList.remove('hidden');
+                setTimeout(() => {
+                    resultCard.classList.add('show');
+                }, 10);
+                
+            } else {
+                // Show not found card with animation
+                resultCard.classList.add('hidden');
+                resultCard.classList.remove('show');
+                notFoundCard.classList.remove('hidden');
+                setTimeout(() => {
+                    notFoundCard.classList.add('show');
+                }, 10);
+            }
+        }
+        
+        function resetForm() {
+            namaInput.value = '';
+            nisInput.value = '';
+            resultCard.classList.remove('show');
+            notFoundCard.classList.remove('show');
+            
+            setTimeout(() => {
+                resultCard.classList.add('hidden');
+                notFoundCard.classList.add('hidden');
+            }, 300);
+            
+            namaInput.focus();
+            
+            // Remove confetti
+            const existingConfetti = document.querySelectorAll('.confetti');
+            existingConfetti.forEach(c => c.remove());
+        }
+        
+        function createConfetti() {
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ff8800', '#8800ff'];
+            const shapes = ['circle', 'square', 'triangle'];
+            
+            // Remove existing confetti
+            const existingConfetti = document.querySelectorAll('.confetti');
+            existingConfetti.forEach(c => c.remove());
+            
+            // Create new confetti
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = `${Math.random() * 100}%`;
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.width = `${Math.random() * 10 + 5}px`;
+                confetti.style.height = `${Math.random() * 10 + 5}px`;
+                
+                // Random shapes
+                const shape = shapes[Math.floor(Math.random() * shapes.length)];
+                if (shape === 'circle') {
+                    confetti.style.borderRadius = '50%';
+                } else if (shape === 'triangle') {
+                    confetti.style.width = '0';
+                    confetti.style.height = '0';
+                    confetti.style.backgroundColor = 'transparent';
+                    confetti.style.borderLeft = `${Math.random() * 10 + 5}px solid transparent`;
+                    confetti.style.borderRight = `${Math.random() * 10 + 5}px solid transparent`;
+                    confetti.style.borderBottom = `${Math.random() * 10 + 10}px solid ${colors[Math.floor(Math.random() * colors.length)]}`;
+                }
+                
+                confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                confetti.style.animationDelay = `${Math.random() * 2}s`;
+                document.body.appendChild(confetti);
+                
+                // Remove confetti after animation
+                setTimeout(() => {
+                    confetti.remove();
+                }, 5000);
+            }
+        }
+        
+        function showAlert(message) {
+            // Create alert element
+            const alertEl = document.createElement('div');
+            alertEl.className = 'fixed top-4 left-1/2 transform -translate-x-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg shadow-lg z-50';
+            alertEl.style.maxWidth = '90%';
+            alertEl.style.width = '400px';
+            
+            alertEl.innerHTML = `
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            document.body.appendChild(alertEl);
+            
+            // Animate in
+            alertEl.style.opacity = '0';
+            alertEl.style.transform = 'translate(-50%, -20px)';
+            alertEl.style.transition = 'all 0.3s ease-out';
+            
+            setTimeout(() => {
+                alertEl.style.opacity = '1';
+                alertEl.style.transform = 'translate(-50%, 0)';
+            }, 10);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                alertEl.style.opacity = '0';
+                alertEl.style.transform = 'translate(-50%, -20px)';
+                
+                setTimeout(() => {
+                    alertEl.remove();
+                }, 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
